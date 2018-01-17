@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Input and Output Bindings';
+
+  Getinfo(message:string){
+console.log(`Getting More Info ${message}`);
+  }
 }
