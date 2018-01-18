@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+//import {  } from '@angular/core/src/metadata/lifecycle_hooks';
 
 @Component({
   selector: 'app-child-one',
@@ -6,11 +7,12 @@ import { Component, OnInit,Input } from '@angular/core';
   styleUrls: ['./child-one.component.css']
 })
 export class ChildOneComponent implements OnInit {
-@Input () StudentRollNumber:number;
-@Input()  StudentName:string;
-@Input()  StudentCity:string;
-@Input('state')  StudenyState:string;  
-  constructor() { }
+@Input () studentRollNumber:number;
+@Input('StudentName')  studentName:string;
+@Input('StudentCity')  studentCity:string;
+@Input('StudentState')  studentState:string;  
+  constructor() { 
+  }
 
   ngOnInit() {
   }

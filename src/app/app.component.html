@@ -9,3 +9,13 @@
 <app-child-two (Moreinfo)="Getinfo($event)"></app-child-two>
 </div>
   
+<div>
+  Implemention of Component One 
+<app-child-one [studentRollNumber]="rollnumber"></app-child-one>
+<app-child-one [StudentName]="name"></app-child-one>
+<app-child-one [StudentCity]="city"></app-child-one>
+<app-child-one [StudentState]="state"></app-child-one>
+<button (click)="getData()">Get Data From Componet one</button>
+</div>
+
+<h3>{{message}}</h3>

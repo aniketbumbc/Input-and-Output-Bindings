@@ -9,6 +9,17 @@ export class AppComponent {
   title = 'Input and Output Bindings';
 
   Getinfo(message:string){
-console.log(`Getting More Info ${message}`);
+document.write(`Getting More Info ${message}`);
+  }
+// Input bind data from child-component
+  private name:string;
+  private city:string;
+  private state:string;
+  private rollnumber:number;
+ getData():void{
+    this.rollnumber=454345;
+    this.name="Aniket";
+    this.city="London";
+    this.state="UK";
   }
 }
